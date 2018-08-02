@@ -4,17 +4,21 @@
 
 #include "CoreMinimal.h"
 #include "Factories/Factory.h"
+#include "EditorReimportHandler.h"
 #include "SuffixesFactory.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class ADVENTUREENGINEEDITOR_API USuffixesFactory : public UFactory
+class ADVENTUREENGINEEDITOR_API USuffixesFactory : public UFactory, public FReimportHandler
 {
-	GENERATED_BODY()
+	GENERATED_UCLASS_BODY()
 	
-	
-	
-	
+public:
+	virtual UObject* FactoryCreateText(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags, UObject* Context, const TCHAR* Type, const TCHAR*& Buffer, const TCHAR* BufferEnd, FFeedbackContext* Warn) override;
+
+	virtual bool CanReimport(UObject* Obj, TArray<FString>& OutFilenames) override;
+	virtual void SetReimportPaths(UObject* Obj, const TArray<FString>& NewReimportPaths) override;
+	virtual EReimportResult::Type Reimport(UObject* Obj) override;
 };

@@ -17,3 +17,13 @@ void USuffixes::Serialize(FArchive& Ar)
 	Ar << suffixes;
 }
 
+void USuffixes::AddSuffix(const FString& InputString, WordClass InputType, const FString& OutputString, WordClass OutputType)
+{
+	FSuffix s;
+	s.InputString = InputString;
+	s.InputType = InputType;
+	s.OutputString = OutputString;
+	s.OutputType = OutputType;
+
+	suffixes.Add(s);
+}
