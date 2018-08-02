@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "AdventureEngine",
+	"Description": "Text-based adventure engine",
+	"Category": "Other",
+	"CreatedBy": "Jay Murray",
+	"CreatedByURL": "https://github.com/dakitten2358",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": false,
+  "Modules": [
+    {
+      "Name": "AdventureEngine",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "AdventureEngineEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

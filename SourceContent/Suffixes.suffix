@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="cp437"?>
+<Vocab ID="901">
+	<Suffix InputString="*s" InputType="16" OutputString="*" />
+	<Suffix InputString="*es" InputType="16" OutputString="*" />
+	<Suffix InputString="*ies" InputType="16" OutputString="*y" />
+	<Suffix InputString="*men" InputType="16" OutputString="*man" />
+	<Suffix InputString="*ves" InputType="16" OutputString="*fe" />
+	<Suffix InputString="*ves" InputType="16" OutputString="*f" />
+	<Suffix InputString="*people" InputType="16" OutputString="*person" />
+	<Suffix InputString="*ing" InputType="148" OutputString="*" OutputType="128" />
+	<Suffix InputString="*ing" InputType="32" OutputString="*" />
+	<Suffix InputString="*ing" InputType="148" OutputString="*e" OutputType="128" />
+	<Suffix InputString="*ing" InputType="32" OutputString="*e" />
+	<Suffix InputString="*nning" InputType="148" OutputString="*n" OutputType="128" />
+	<Suffix InputString="*pping" InputType="148" OutputString="*p" OutputType="128" />
+	<Suffix InputString="*mming" InputType="148" OutputString="*m" OutputType="128" />
+	<Suffix InputString="*tting" InputType="148" OutputString="*t" OutputType="128" />
+	<Suffix InputString="*rring" InputType="148" OutputString="*r" OutputType="128" />
+	<Suffix InputString="*gging" InputType="148" OutputString="*g" OutputType="128" />
+	<Suffix InputString="*ed" InputType="20" OutputString="*" OutputType="128" />
+	<Suffix InputString="*ed" InputType="20" OutputString="*e" OutputType="128" />
+	<Suffix InputString="*nned" InputType="20" OutputString="*n" OutputType="128" />
+	<Suffix InputString="*pped" InputType="20" OutputString="*p" OutputType="128" />
+	<Suffix InputString="*mmed" InputType="20" OutputString="*m" OutputType="128" />
+	<Suffix InputString="*tted" InputType="20" OutputString="*t" OutputType="128" />
+	<Suffix InputString="*rred" InputType="20" OutputString="*r" OutputType="128" />
+	<Suffix InputString="*gged" InputType="20" OutputString="*g" OutputType="128" />
+	<Suffix InputString="*ied" InputType="20" OutputString="*y" OutputType="128" />
+	<Suffix InputString="*er" InputType="20" OutputString="*" OutputType="132" />
+	<Suffix InputString="*er" InputType="20" OutputString="*e" OutputType="132" />
+	<Suffix InputString="*nner" InputType="20" OutputString="*n" OutputType="132" />
+	<Suffix InputString="*pper" InputType="20" OutputString="*p" OutputType="132" />
+	<Suffix InputString="*mmer" InputType="20" OutputString="*m" OutputType="132" />
+	<Suffix InputString="*tter" InputType="20" OutputString="*t" OutputType="132" />
+	<Suffix InputString="*rrer" InputType="20" OutputString="*r" OutputType="132" />
+	<Suffix InputString="*gger" InputType="20" OutputString="*g" OutputType="132" />
+	<Suffix InputString="*ier" InputType="20" OutputString="*y" OutputType="132" />
+	<Suffix InputString="*est" InputType="4" OutputString="*" />
+	<Suffix InputString="*est" InputType="4" OutputString="*e" />
+	<Suffix InputString="*nnest" InputType="4" OutputString="*n" />
+	<Suffix InputString="*ppest" InputType="4" OutputString="*p" />
+	<Suffix InputString="*mmest" InputType="4" OutputString="*m" />
+	<Suffix InputString="*ttest" InputType="4" OutputString="*t" />
+	<Suffix InputString="*rrest" InputType="4" OutputString="*r" />
+	<Suffix InputString="*ggest" InputType="4" OutputString="*g" />
+	<Suffix InputString="*iest" InputType="4" OutputString="*y" />
+	<Suffix InputString="*ly" InputType="64" OutputString="*" OutputType="4" />
+	<Suffix InputString="*y" InputType="4" OutputString="*" OutputType="16" />
+	<Suffix InputString="*ish" InputType="4" OutputString="*" />
+</Vocab>
