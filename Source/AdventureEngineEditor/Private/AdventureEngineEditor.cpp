@@ -24,8 +24,11 @@ void FAdventureEngineEditorModule::RegisterAssetTools()
 {
 	IAssetTools& AssetTools = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools").Get();
 
-	RegisterAssetTypeAction(AssetTools, MakeShareable(new FAssetTypeActions_WordGroups(/*Style.ToSharedRef()*/)));
-	RegisterAssetTypeAction(AssetTools, MakeShareable(new FAssetTypeActions_Suffixes(/*Style.ToSharedRef()*/)));
+	AdventureAssetCategoryBit = AssetTools.RegisterAdvancedAssetCategory(FName("AdventureEngine"), LOCTEXT("AdventureEngineCategory", "Adventure Engine"));
+
+	RegisterAssetTypeAction(AssetTools, MakeShareable(new FAssetTypeActions_WordGroups(AdventureAssetCategoryBit)));
+	RegisterAssetTypeAction(AssetTools, MakeShareable(new FAssetTypeActions_Suffixes(AdventureAssetCategoryBit)));
+	RegisterAssetTypeAction(AssetTools, MakeShareable(new FAssetTypeActions_Vocabulary(AdventureAssetCategoryBit)));
 }
 
 void FAdventureEngineEditorModule::RegisterAssetTypeAction(IAssetTools& AssetTools, TSharedRef<IAssetTypeActions> Action)

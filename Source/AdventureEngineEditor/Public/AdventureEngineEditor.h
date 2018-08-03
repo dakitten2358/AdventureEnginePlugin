@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 #include "IAssetTools.h"
+#include "AssetTypeCategories.h"
 
 class FAdventureEngineEditorModule : public IModuleInterface
 {
@@ -21,6 +22,5 @@ protected:
 
 private:
 	TArray<TSharedRef<IAssetTypeActions>> RegisteredAssetTypeActions;
-
-
+	EAssetTypeCategories::Type AdventureAssetCategoryBit;
 };

@@ -5,6 +5,9 @@
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions_Adventure"
 
+// ---------------------------------------------------------------
+// FAssetTypeActions_WordGroups
+// ---------------------------------------------------------------
 void FAssetTypeActions_WordGroups::GetActions(const TArray<UObject*>& InObjects, FMenuBuilder& MenuBuilder)
 {
 	auto WordGroupDefinitions = GetTypedWeakObjectPtrs<UWordGroups>(InObjects);
@@ -48,6 +51,9 @@ void FAssetTypeActions_WordGroups::ExecuteReimport(const TArray<TWeakObjectPtr<U
 	}
 }
 
+// ---------------------------------------------------------------
+// FAssetTypeActions_Suffixes
+// ---------------------------------------------------------------
 void FAssetTypeActions_Suffixes::GetActions(const TArray<UObject*>& InObjects, FMenuBuilder& MenuBuilder)
 {
 	auto Suffixes = GetTypedWeakObjectPtrs<USuffixes>(InObjects);
@@ -89,6 +95,16 @@ void FAssetTypeActions_Suffixes::ExecuteReimport(const TArray<TWeakObjectPtr<USu
 			FReimportManager::Instance()->Reimport(Object, /*bAskForNewFileIfMissing=*/true);
 		}
 	}
+}
+
+// ---------------------------------------------------------------
+// FAssetTypeActions_WordGroups
+// ---------------------------------------------------------------
+void FAssetTypeActions_Vocabulary::GetActions(const TArray<UObject*>& InObjects, FMenuBuilder& MenuBuilder)
+{
+	auto Vocabs = GetTypedWeakObjectPtrs<UVocabulary>(InObjects);
+
+	//todo, add actions if needed
 }
 
 #undef LOCTEXT_NAMESPACE
