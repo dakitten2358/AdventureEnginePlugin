@@ -19,7 +19,7 @@ UWordGroupsFactory::UWordGroupsFactory(const FObjectInitializer& ObjectInitializ
 	bText = true;
 	SupportedClass = UWordGroups::StaticClass();
 
-	Formats.Add("vocab;Adventure Vocabulary File");
+	Formats.Add("words;Adventure Word Group Definition");
 }
 
 
