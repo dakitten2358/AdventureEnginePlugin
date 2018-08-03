@@ -42,7 +42,8 @@ public class AdventureEngineEditor : ModuleRules
 				// ... add private dependencies that you statically link with here ...	
                 "UnrealEd",
                 "XmlParser",
-			}
+                "EditorStyle",
+            }
 			);
 		
 		
@@ -50,7 +51,8 @@ public class AdventureEngineEditor : ModuleRules
 			new string[]
 			{
 				// ... add any modules that your module loads dynamically here ...
-			}
+                "AssetTools",
+            }
 			);
 	}
 }
