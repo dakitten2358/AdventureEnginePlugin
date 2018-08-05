@@ -30,8 +30,8 @@ public:
 	
 	void AddWordGroup(int id, WordClass wordClass, const TArray<FString>& words);
 
-	int Lookup(const FString& word);
+	FWordResult Lookup(const FString& word) const;
 
 private:
-	TMap<int32, FWordGroup> groups;
+	TMap<uint32, FWordGroup> groups;
 };

@@ -31,9 +31,5 @@ public:
 
 	void AddSuffix(const FString& InputString, WordClass InputType, const FString& OutputString, WordClass OutputType);
 
-private:
-	TArray<FSuffix> suffixes;
-	
-	
-	
+	TArray<FSuffix> Rules;
 };

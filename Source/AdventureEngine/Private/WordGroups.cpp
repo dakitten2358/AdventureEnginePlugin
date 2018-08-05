@@ -10,15 +10,15 @@ void UWordGroups::AddWordGroup(int id, WordClass wordClass, const TArray<FString
 	group.strings = words;
 }
 
-int UWordGroups::Lookup(const FString& word)
+FWordResult UWordGroups::Lookup(const FString& word) const
 {
 	for (auto v : groups)
 	{
 		if (v.Value.strings.Contains(word))
-			return v.Key;
+			return FWordResult(v.Value.wordClass, v.Key);
 	}
 
-	return 0;
+	return FWordResult::NoWord;
 }
 
 FArchive &operator <<(FArchive& Ar, FWordGroup& WordGroup)

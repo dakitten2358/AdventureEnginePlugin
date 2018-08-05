@@ -14,7 +14,7 @@ FArchive &operator <<(FArchive& Ar, FSuffix& Suffix)
 void USuffixes::Serialize(FArchive& Ar)
 {
 	Super::Serialize(Ar);
-	Ar << suffixes;
+	Ar << Rules;
 }
 
 void USuffixes::AddSuffix(const FString& InputString, WordClass InputType, const FString& OutputString, WordClass OutputType)
@@ -25,5 +25,5 @@ void USuffixes::AddSuffix(const FString& InputString, WordClass InputType, const
 	s.OutputString = OutputString;
 	s.OutputType = OutputType;
 
-	suffixes.Add(s);
+	Rules.Add(s);
 }
