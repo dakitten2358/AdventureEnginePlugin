@@ -26,6 +26,7 @@ public:
 	Tokenizer(class UVocabulary* InVocabulary);
 
 	bool Parse(const FString& InText, TArray<FToken>& Tokens) const;
+	bool Parse(const FString& InText, TArray<FWordResult>& Words) const;
 
 private:
 	void TokenFromString(const FString& InText, TArray<FToken>& Tokens) const;

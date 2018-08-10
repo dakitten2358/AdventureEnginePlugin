@@ -21,6 +21,21 @@ bool Tokenizer::Parse(const FString& InText, TArray<FToken>& Tokens) const
 	return true;
 }
 
+bool Tokenizer::Parse(const FString& InText, TArray<FWordResult>& Words) const
+{
+	TArray<FToken> tokens;
+	if (!Parse(InText, tokens))
+		return false;
+
+	for (const auto& token : tokens)
+	{
+		if (token.Type == ETokenType::Word)
+			Words.Push(token.Value);
+	}
+
+	return tokens.Num() == Words.Num();
+}
+
 void Tokenizer::TokenFromString(const FString& InText, TArray<FToken>& Tokens) const
 {
 	FString currentWord;
